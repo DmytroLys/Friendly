@@ -14,6 +14,8 @@
 		66F8539F2AB89FED00D5D1A9 /* Friendly.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66F8539D2AB89FED00D5D1A9 /* Friendly.xcdatamodeld */; };
 		66F853A12AB89FEE00D5D1A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F853A02AB89FEE00D5D1A9 /* Assets.xcassets */; };
 		66F853A42AB89FEE00D5D1A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F853A22AB89FEE00D5D1A9 /* LaunchScreen.storyboard */; };
+		66F853AC2AB8A1E000D5D1A9 /* PreloadData.json in Resources */ = {isa = PBXBuildFile; fileRef = 66F853AB2AB8A1E000D5D1A9 /* PreloadData.json */; };
+		66F853AE2AB8ADCE00D5D1A9 /* JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F853AD2AB8ADCE00D5D1A9 /* JsonDecoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		66F853A02AB89FEE00D5D1A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66F853A32AB89FEE00D5D1A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66F853A52AB89FEE00D5D1A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66F853AB2AB8A1E000D5D1A9 /* PreloadData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PreloadData.json; sourceTree = "<group>"; };
+		66F853AD2AB8ADCE00D5D1A9 /* JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +63,14 @@
 			isa = PBXGroup;
 			children = (
 				66F8539D2AB89FED00D5D1A9 /* Friendly.xcdatamodeld */,
+				66F853AD2AB8ADCE00D5D1A9 /* JsonDecoder.swift */,
 				66F853942AB89FED00D5D1A9 /* AppDelegate.swift */,
 				66F853962AB89FED00D5D1A9 /* SceneDelegate.swift */,
 				66F853982AB89FED00D5D1A9 /* ViewController.swift */,
 				66F8539A2AB89FED00D5D1A9 /* Main.storyboard */,
 				66F853A02AB89FEE00D5D1A9 /* Assets.xcassets */,
 				66F853A22AB89FEE00D5D1A9 /* LaunchScreen.storyboard */,
+				66F853AB2AB8A1E000D5D1A9 /* PreloadData.json */,
 				66F853A52AB89FEE00D5D1A9 /* Info.plist */,
 			);
 			path = Friendly;
@@ -129,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66F853A42AB89FEE00D5D1A9 /* LaunchScreen.storyboard in Resources */,
+				66F853AC2AB8A1E000D5D1A9 /* PreloadData.json in Resources */,
 				66F853A12AB89FEE00D5D1A9 /* Assets.xcassets in Resources */,
 				66F8539C2AB89FED00D5D1A9 /* Main.storyboard in Resources */,
 			);
@@ -142,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66F853992AB89FED00D5D1A9 /* ViewController.swift in Sources */,
+				66F853AE2AB8ADCE00D5D1A9 /* JsonDecoder.swift in Sources */,
 				66F853952AB89FED00D5D1A9 /* AppDelegate.swift in Sources */,
 				66F8539F2AB89FED00D5D1A9 /* Friendly.xcdatamodeld in Sources */,
 				66F853972AB89FED00D5D1A9 /* SceneDelegate.swift in Sources */,
