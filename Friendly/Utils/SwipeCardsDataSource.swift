@@ -12,3 +12,7 @@ protocol SwipeCardsDataSource {
     func card(at index: Int) -> SwipeCardView
     func emptyView() -> UIView?
 }
+
+protocol SwipeCardsDelegate {
+    func swipeDidEnd(on view: SwipeCardView)
+}

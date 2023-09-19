@@ -9,6 +9,6 @@ import UIKit
 
 class SwipeCardView: UIView {
 
-
+    var delegate: SwipeCardsDelegate?
 
 }

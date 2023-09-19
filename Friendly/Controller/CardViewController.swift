@@ -29,14 +29,12 @@ class CardViewController: UIViewController {
         view.addSubview(stackContainer)
         configureStackContainer()
         stackContainer.translatesAutoresizingMaskIntoConstraints = false
-        
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        stackContainer.dataSource = self
     }
     
     func configureStackContainer() {
@@ -55,7 +53,9 @@ extension CardViewController: SwipeCardsDataSource {
     }
     
     func card(at index: Int) -> SwipeCardView {
-        return SwipeCardView()
+        let card = SwipeCardView()
+        card.dataSource = viewModeldata[index]
+        return
     }
     
     func emptyView() -> UIView? {
