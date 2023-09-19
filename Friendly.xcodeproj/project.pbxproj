@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66B8F80B2AB9C9FD00B79083 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B8F80A2AB9C9FD00B79083 /* CardViewController.swift */; };
+		66B8F8122AB9CD5900B79083 /* CardsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B8F8112AB9CD5900B79083 /* CardsDataModel.swift */; };
+		66B8F8142AB9CEC100B79083 /* StackViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B8F8132AB9CEC100B79083 /* StackViewContainer.swift */; };
+		66B8F8162AB9D21C00B79083 /* SwipeCardsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B8F8152AB9D21C00B79083 /* SwipeCardsDataSource.swift */; };
+		66B8F8182AB9D3E700B79083 /* SwipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B8F8172AB9D3E700B79083 /* SwipeCardView.swift */; };
 		66F853952AB89FED00D5D1A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F853942AB89FED00D5D1A9 /* AppDelegate.swift */; };
 		66F853972AB89FED00D5D1A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F853962AB89FED00D5D1A9 /* SceneDelegate.swift */; };
 		66F853992AB89FED00D5D1A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F853982AB89FED00D5D1A9 /* ViewController.swift */; };
@@ -19,6 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		66B8F80A2AB9C9FD00B79083 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		66B8F8112AB9CD5900B79083 /* CardsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsDataModel.swift; sourceTree = "<group>"; };
+		66B8F8132AB9CEC100B79083 /* StackViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StackViewContainer.swift; path = Friendly/Controller/StackViewContainer.swift; sourceTree = SOURCE_ROOT; };
+		66B8F8152AB9D21C00B79083 /* SwipeCardsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardsDataSource.swift; sourceTree = "<group>"; };
+		66B8F8172AB9D3E700B79083 /* SwipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardView.swift; sourceTree = "<group>"; };
 		66F853912AB89FED00D5D1A9 /* Friendly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friendly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F853942AB89FED00D5D1A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66F853962AB89FED00D5D1A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +53,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66B8F80C2AB9CA0300B79083 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				66B8F80A2AB9C9FD00B79083 /* CardViewController.swift */,
+				66F853982AB89FED00D5D1A9 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		66B8F80D2AB9CA3F00B79083 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				66B8F8132AB9CEC100B79083 /* StackViewContainer.swift */,
+				66F8539A2AB89FED00D5D1A9 /* Main.storyboard */,
+				66B8F8172AB9D3E700B79083 /* SwipeCardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		66B8F80E2AB9CA4800B79083 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66B8F8112AB9CD5900B79083 /* CardsDataModel.swift */,
+				66F853AB2AB8A1E000D5D1A9 /* PreloadData.json */,
+				66F8539D2AB89FED00D5D1A9 /* Friendly.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		66B8F80F2AB9CB9300B79083 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				66B8F8152AB9D21C00B79083 /* SwipeCardsDataSource.swift */,
+				66F853AD2AB8ADCE00D5D1A9 /* JsonDecoder.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		66B8F8102AB9CC0900B79083 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				66F853942AB89FED00D5D1A9 /* AppDelegate.swift */,
+				66F853962AB89FED00D5D1A9 /* SceneDelegate.swift */,
+				66F853A02AB89FEE00D5D1A9 /* Assets.xcassets */,
+				66F853A22AB89FEE00D5D1A9 /* LaunchScreen.storyboard */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
 		66F853882AB89FEC00D5D1A9 = {
 			isa = PBXGroup;
 			children = (
@@ -62,15 +121,11 @@
 		66F853932AB89FED00D5D1A9 /* Friendly */ = {
 			isa = PBXGroup;
 			children = (
-				66F8539D2AB89FED00D5D1A9 /* Friendly.xcdatamodeld */,
-				66F853AD2AB8ADCE00D5D1A9 /* JsonDecoder.swift */,
-				66F853942AB89FED00D5D1A9 /* AppDelegate.swift */,
-				66F853962AB89FED00D5D1A9 /* SceneDelegate.swift */,
-				66F853982AB89FED00D5D1A9 /* ViewController.swift */,
-				66F8539A2AB89FED00D5D1A9 /* Main.storyboard */,
-				66F853A02AB89FEE00D5D1A9 /* Assets.xcassets */,
-				66F853A22AB89FEE00D5D1A9 /* LaunchScreen.storyboard */,
-				66F853AB2AB8A1E000D5D1A9 /* PreloadData.json */,
+				66B8F8102AB9CC0900B79083 /* Supporting */,
+				66B8F80F2AB9CB9300B79083 /* Utils */,
+				66B8F80E2AB9CA4800B79083 /* Model */,
+				66B8F80C2AB9CA0300B79083 /* Controller */,
+				66B8F80D2AB9CA3F00B79083 /* View */,
 				66F853A52AB89FEE00D5D1A9 /* Info.plist */,
 			);
 			path = Friendly;
@@ -150,9 +205,14 @@
 			files = (
 				66F853992AB89FED00D5D1A9 /* ViewController.swift in Sources */,
 				66F853AE2AB8ADCE00D5D1A9 /* JsonDecoder.swift in Sources */,
+				66B8F80B2AB9C9FD00B79083 /* CardViewController.swift in Sources */,
 				66F853952AB89FED00D5D1A9 /* AppDelegate.swift in Sources */,
 				66F8539F2AB89FED00D5D1A9 /* Friendly.xcdatamodeld in Sources */,
+				66B8F8162AB9D21C00B79083 /* SwipeCardsDataSource.swift in Sources */,
+				66B8F8122AB9CD5900B79083 /* CardsDataModel.swift in Sources */,
 				66F853972AB89FED00D5D1A9 /* SceneDelegate.swift in Sources */,
+				66B8F8142AB9CEC100B79083 /* StackViewContainer.swift in Sources */,
+				66B8F8182AB9D3E700B79083 /* SwipeCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

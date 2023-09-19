@@ -17,8 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let context = persistentContainer.viewContext
         
-        let jsonDecoder = JsonDecoder()
-        jsonDecoder.preloadData(context: context)
+        JsonDecoder.preloadData(context: context)
         
         return true
     }
